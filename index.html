@@ -6,14 +6,48 @@
 
     <style>
       body {
-            font-family: Arial, sans-serif;
-        }
+        margin: 0;
+        padding: 0;
+        
+        /* Hintergrundbild */
+        background-image: url("https://cdn.discordapp.com/attachments/1126805565608308868/1442549971227381893/Screenshot_2025-11-08_235046.png?ex=6925d6da&is=6924855a&hm=eda6308ecfd97eb53f5dbe27234330ee47b719ea48decf88eb6704718669cadb&"); /* HIER dein Bild einfügen */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* Trick: Hintergrund nicht hell durchscheinen lassen */
+        position: relative;
+    }
+
+    /* Overlay erzeugen */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        background: rgba(0, 0, 0, 0.4); /* Helligkeit ändern: 0.4 = leicht dunkel */
+        
+        z-index: -1; /* hinter den Inhalt */
+    }
+
+    /* Damit der Inhalt über dem Overlay bleibt */
+    * {
+        position: relative;
+        z-index: 1;
+    }
     </style>
 </head>
 <body>
 
-    <h1>Blu gehört mir net
+    <h1 style="color: white;">Blu gehört mir net
     </h1>
+   
+
+
+
 
  <a href="https://cdn.discordapp.com/attachments/1366039638174863433/1441925489387245690/Screenshot_2025-11-22_235646.png?ex=69243a02&is=6922e882&hm=b2c868fb5c1ff9a17e90abb2f94f965352dd3dc5125bded1a3c087275ff731ea&" target="_blank">   
 <img src="https://cdn.discordapp.com/attachments/1366039638174863433/1441844766403858503/image.png?ex=6923eed4&is=69229d54&hm=04f1ed7c71441b4f32c038ad7b3594ab8f8e56eaaf157223727823081ff706a6&" width="100px" height="100px">
@@ -45,6 +79,8 @@
 <a href="https://grabify.link/8SDXLX" target="_blank">
 <p>Verkaufe hier deine IP Adresse</p>
 </a>
+
+
 
 
 
